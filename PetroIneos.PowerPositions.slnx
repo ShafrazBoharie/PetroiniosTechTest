@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/Libraries/">
+    <File Path="Libraries\PowerService.dll" />
+  </Folder>
+  <Project Path="PetroIneos.PowerPositions.Tests/PetroIneos.PowerPositions.Tests.csproj" />
+  <Project Path="PetroIneos.PowerPositions/PetroIneos.PowerPositions.csproj" />
+</Solution>

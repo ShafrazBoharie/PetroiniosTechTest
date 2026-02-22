@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+    <PropertyGroup>
+        <TargetFrameworks>net9.0;net10.0</TargetFrameworks>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>dotnet-PetroIneos.PowerPositions-2f61981a-3fb2-43df-a074-fdcfaa118f29</UserSecretsId>
+        <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.3" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.3" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.3"/>
+        <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="10.0.3" />
+        <PackageReference Include="Quartz.Extensions.Hosting" Version="3.15.1" />
+        <PackageReference Include="Serilog" Version="4.3.1" />
+        <PackageReference Include="Serilog.Extensions.Hosting" Version="10.0.0" />
+        <PackageReference Include="Serilog.Sinks.Console" Version="6.1.1" />
+        <PackageReference Include="Serilog.Sinks.File" Version="7.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="PowerService">
+        <HintPath>..\Libraries\PowerService.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>
